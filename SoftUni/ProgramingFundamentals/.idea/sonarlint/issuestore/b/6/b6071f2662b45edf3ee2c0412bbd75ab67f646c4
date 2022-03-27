@@ -1,0 +1,8 @@
+
+h
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(Çµí‘
+G
+java:S1128",Remove this unused import 'java.sql.Struct'.(Í‘©–ûÿÿÿÿ
+4
+java:S1700>"Rename field "department"(îÏ£Ýÿÿÿÿÿ
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ò§ÿ¡

@@ -1,0 +1,13 @@
+
+<	java:S131$""Add a default case to this switch.(¬Ö½žüÿÿÿÿ
+H
+java:S1128"-Remove this unused import 'java.util.Locale'.(åð×±ûÿÿÿÿ
+b
+java:S1192"GDefine a constant instead of duplicating this literal "shards" 3 times.(«›èÇúÿÿÿÿ
+\
+java:S1192"FDefine a constant instead of duplicating this literal "motes" 3 times.(–‹Œ²
+`
+java:S1192"JDefine a constant instead of duplicating this literal "fragments" 3 times.(á¶ú
+J
+java:S1066"/Merge this if statement with the enclosing one.(É¦óˆùÿÿÿÿ
+n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‹ý’i

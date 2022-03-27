@@ -1,0 +1,7 @@
+
+h
+java:S6204"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(çÊ§È
+7	java:S131""Add a default case to this switch.(Ùãëæ
+D
+java:S54132")Verify that "remove()" is used correctly.(¶é¼şÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(õÄ¾†ûÿÿÿÿ
