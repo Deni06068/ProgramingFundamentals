@@ -24,7 +24,6 @@ public class SoftUniBarIncome {
             }
             input = scanner.nextLine();
         }
-
         System.out.printf("Total income: %.2f", finalIncome);
     }
 }

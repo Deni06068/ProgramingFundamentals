@@ -39,7 +39,7 @@ public class Race {
                 System.out.printf("1st place: %s%n", sorted.get(i));
             }else if (i == 1){
                 System.out.printf("2nd place: %s%n", sorted.get(i));
-            }else if (i == 2){
+            }else {
                 System.out.printf("3rd place: %s%n", sorted.get(i));
             }
         }
