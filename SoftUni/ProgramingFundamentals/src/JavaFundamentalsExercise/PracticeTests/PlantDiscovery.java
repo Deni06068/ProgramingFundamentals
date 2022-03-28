@@ -43,14 +43,20 @@ public class PlantDiscovery {
                     if (plants.containsKey(command[1])) {
                         Plant plant = plants.get(command[1]);
                         plant.getRating().clear();
-                        plant.getRating().add(0);
+                    } else {
+                        System.out.println("error");
                     }
                     break;
             }
             input = scanner.nextLine();
         }
+        plants.forEach((s, plant) -> {
+            if(plant.getRating().isEmpty()){
+                plant.getRating().add(0);
+            }
+        });
         System.out.println("Plants for the exhibition:");
-        plants.entrySet().stream().forEach(p -> System.out.printf("- %s; Rarity: %d; Rating: %.2f%n", p.getValue().name, p.getValue().rarity, (Double) p.getValue().rating.stream().mapToDouble(a -> a).average().orElse(-1)));
+        plants.forEach((key, value) -> System.out.printf("- %s; Rarity: %d; Rating: %.2f%n", value.name, value.rarity, value.rating.stream().mapToDouble(a -> a).average().orElse(-1)));
     }
 
     static class Plant {
