@@ -30,12 +30,4 @@ public class MirrorWords {
                 .collect(Collectors.joining(", "));
         System.out.println(mapAsString);
     }
-    public String convertWithIteration(Map<String, String> map) {
-        StringBuilder mapAsString = new StringBuilder();
-        for (String key : map.keySet()) {
-            mapAsString.append(key).append(" <=> ").append(map.get(key)).append(", ");
-        }
-        mapAsString.delete(mapAsString.length()-2, mapAsString.length());
-        return mapAsString.toString();
-    }
 }
