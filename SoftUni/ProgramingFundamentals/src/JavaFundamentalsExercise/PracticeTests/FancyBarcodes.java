@@ -8,19 +8,22 @@ public class FancyBarcodes {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int lines = Integer.parseInt(scanner.nextLine());
-        Pattern pattern = Pattern.compile("(@#+)(?<barcode>([A-Z][[a-z]*[\\d]*]{4,}[A-Z]))\\1");
+        Pattern pattern = Pattern.compile("(@#+)(?<barcode>([A-Z][A-Za-z\\d]{4,}[A-Z]))(@#+)");
         Pattern digits = Pattern.compile("\\d+");
         for (int i = 0; i < lines; i++) {
+            StringBuilder sbDigit = new StringBuilder();
             String input = scanner.nextLine();
             Matcher matcher = pattern.matcher(input);
             if (matcher.find()){
                 Matcher digitsMatcher = digits.matcher(matcher.group("barcode"));
-                StringBuilder sb = new StringBuilder(matcher.group("barcode"));
-                String group = "0";
-                if (digitsMatcher.find()){
-                    group = digitsMatcher.group();
+                while (digitsMatcher.find()){
+                    sbDigit.append(digitsMatcher.group());
                 }
-                System.out.println("Product group: " + group);
+                if (sbDigit.length() == 0){
+                    System.out.println("Product group: 00");
+                }else {
+                    System.out.println("Product group: " + sbDigit);
+                }
             }else {
                 System.out.println("Invalid barcode");
             }
